@@ -1,5 +1,5 @@
 <a
-  href="/central"
+  href="/"
   aria-label="Ir para a Central"
   data-sveltekit-preload-data
   class="cursor-pointer"
