@@ -9,5 +9,10 @@
 
 {@render children()}
 
+<img
+alt="Fundo"
+src="/images/bg1.webp"
+class="fixed inset-0 w-screen h-screen -z-50"
+>
 <Fila />
 <UltimosChamados />
