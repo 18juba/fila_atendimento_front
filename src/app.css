@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+.font1 {
+    font-family: "Smooch Sans", sans-serif;
+}
