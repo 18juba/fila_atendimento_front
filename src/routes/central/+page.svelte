@@ -1,5 +1,5 @@
-<div class="w-screen h-screen flex justify-center items-center">
-  <div class="font1 flex flex-col gap-1 bg-black/50 rounded-lg p-4">
+<div class="bg-slate-800 w-screen h-screen flex justify-center items-center">
+  <div class="font1 flex flex-col gap-1 bg-stone-800 rounded-lg p-4">
     <form class="flex flex-col gap-2 text-white">
       <div class="flex flex-col">
         <label>Nome</label>
@@ -10,13 +10,13 @@
     <div class="text-lg font-bold flex gap-3 mt-4">
       <button
         aria-label="Adicionar"
-        class="bg-green-600 text-white rounded-lg px-2 text-lg cursor-pointer hover:bg-green-700"
+        class="bg-blue-800 text-white rounded-lg px-2 text-lg cursor-pointer hover:bg-blue-900"
       >
         Adicionar Pessoa
       </button>
       <button
         aria-label="Chamar"
-        class="bg-blue-600 text-white rounded-lg px-2 text-lg cursor-pointer hover:bg-blue-700"
+        class="bg-pink-800 text-white rounded-lg px-2 text-lg cursor-pointer hover:bg-pink-900"
       >
         Chamar Primeiro
       </button>
