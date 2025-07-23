@@ -30,6 +30,6 @@
 		"vite": "^6.2.6"
 	},
 	"dependencies": {
-		"@fontsource/smooch-sans": "^5.2.6"
+		"@fontsource/alumni-sans-sc": "^5.2.1"
 	}
 }
