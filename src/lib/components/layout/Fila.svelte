@@ -19,7 +19,7 @@
       class="w-full font2 flex flex-col gap-1 justify-start text-slate-100 text-xl px-2 py-1"
     >
       {#each fila as pessoa}
-        <li class="w-full truncate">{pessoa.id}. {pessoa.nome}</li>
+        <li class="w-full truncate italic"><span class=" font-bold">{pessoa.id}</span> {pessoa.nome}</li>
       {/each}
     </ol>
   </div>
