@@ -1,5 +1,5 @@
 <div class="bg-slate-800 w-screen h-screen flex justify-center items-center">
-  <div class="font1 flex flex-col gap-1 bg-stone-800 rounded-lg p-4">
+  <div class="font1 flex flex-col gap-1 bg-stone-800 rounded-lg p-4 animation-in">
     <form class="flex flex-col gap-2 text-white">
       <div class="flex flex-col">
         <label>Nome</label>

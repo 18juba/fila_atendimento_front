@@ -1,5 +1,33 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 .font1 {
-    font-family: "Alumni Sans SC", sans-serif;
+  font-family: "Alumni Sans SC", sans-serif;
+}
+
+.animation-in {
+  animation: scale-in 0.25s linear 1;
+}
+
+.animaion-out {
+  animation: scale-out 0.25s linear 1;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(0.75)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-out {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.75)
+    }
 }
