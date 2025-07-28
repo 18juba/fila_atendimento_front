@@ -1,7 +1,12 @@
 <script>
   import { addPessoa, chamarPessoa } from "$lib/api/api.js";
-  import { chamadoAtual, carregarFila, carregarUltimosChamados } from "$lib/stores/stores.js";
+  import {
+    chamadoAtual,
+    carregarFila,
+    carregarUltimosChamados,
+  } from "$lib/stores/stores.js";
   import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
 
   let nome = "";
   let erro = "";
@@ -35,6 +40,8 @@
       await carregarUltimosChamados();
 
       sucesso = `Chamando: ${pessoa.nome}`;
+
+      goto("/");
     } catch (e) {
       erro = e.message;
     }
