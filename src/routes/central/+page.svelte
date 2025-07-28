@@ -1,12 +1,17 @@
 <script>
   import { addPessoa, chamarPessoa } from "$lib/api/api.js";
-  import { chamadoAtual, carregarFila, ultimosChamados } from "$lib/stores/stores.js";
+  import { chamadoAtual, carregarFila, carregarUltimosChamados } from "$lib/stores/stores.js";
   import { onMount } from "svelte";
 
   let nome = "";
   let erro = "";
   let sucesso = "";
   let chamadaAtual = null;
+
+  onMount(async () => {
+    await carregarFila();
+    await carregarUltimosChamados();
+  });
 
   async function handleAdicionar() {
     erro = sucesso = "";
@@ -21,18 +26,17 @@
   }
 
   async function handleChamar() {
+    erro = sucesso = "";
     try {
       const pessoa = await chamarPessoa();
       chamadoAtual.set(pessoa);
 
-      ultimosChamados.update((lista) => {
-        const nova = [pessoa, ...lista];
-        return nova.slice(0, 3); // mantem só os 3 últimos
-      });
-
       await carregarFila();
+      await carregarUltimosChamados();
+
+      sucesso = `Chamando: ${pessoa.nome}`;
     } catch (e) {
-      console.error("Erro ao chamar pessoa", e);
+      erro = e.message;
     }
   }
 </script>

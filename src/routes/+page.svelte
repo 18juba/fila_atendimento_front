@@ -16,7 +16,7 @@
           <p class="text-6xl capitalize">{$chamadoAtual.nome}</p>
         </h1>
       {:else}
-        <p class="text-white">Nenhum chamado ainda</p>
+        <p class="text-white text-4xl sm:text-5xl">Nenhum chamado ainda</p>
       {/if}
     </div>
   </a>

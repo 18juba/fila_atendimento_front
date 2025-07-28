@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { fila, carregarFila } from '$lib/stores/stores';
+  import { fila, carregarFila } from '$lib/stores/stores.js';
 
   onMount(() => {
     carregarFila();
