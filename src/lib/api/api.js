@@ -1,5 +1,5 @@
 // src/lib/api.js
-const BASE = "http://localhost:8080";
+const BASE = "http://45.77.198.45:8080";
 
 export async function addPessoa(nome) {
   const res = await fetch(`${BASE}/chamadas`, {
