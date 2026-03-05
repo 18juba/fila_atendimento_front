@@ -1,5 +1,5 @@
 // src/lib/api.js
-const BASE = "https://lucas.jctech.digital";
+const BASE = "http://localhost:8080";
 
 
 export async function addPessoa(nome) {
